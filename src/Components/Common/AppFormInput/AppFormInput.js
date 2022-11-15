@@ -58,7 +58,13 @@ const AppFormInput = React.forwardRef((props, ref) => {
 				valid={error === false}
 				invalid={error === true}
 			>
-				{type === "select" ? options.map((option, index) => (<option key={`${name}${index}`} value={option.value}>{option.label}</option>)) : undefined}
+				{type === "select"
+					? options.map((option, index) => (
+							<option key={`${name}${index}`} value={option.value}>
+								{option.label}
+							</option>
+					  ))
+					: undefined}
 			</Input>
 			{!!helperText && (
 				<FormText

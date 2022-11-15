@@ -7,11 +7,11 @@ import Logout from "../pages/Authentication/Logout"
 import Register from "../pages/Authentication/Register"
 import GetOtp from "../pages/Authentication/GetOtp"
 
-
 import ComponentLibrary from "../pages/ComponentLibrary"
 import UploadESGData from "../pages/SubmissionForm"
 import UploadList from "../pages/SubmissionHistory"
 
+import PageA from "../pages/PageA"
 
 const authProtectedRoutes = [
 	{ path: "/dashboard", component: ComponentLibrary },
@@ -212,7 +212,9 @@ const publicRoutes = [
 	{ path: "/login", component: Login },
 	{ path: "/get-otp", component: GetOtp },
 	{ path: "/forgot-password", component: ForgetPasswordPage },
-	{ path: "/register", component: Register }
+	{ path: "/register", component: Register },
+
+	{ path: "/page-a", component: PageA }
 
 	// //AuthenticationInner pages
 	// { path: "/auth-signin-basic", component: BasicSignIn },
